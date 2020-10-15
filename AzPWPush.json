@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "baseName": {
-            "defaultValue": "AzAutoMapper",
+            "defaultValue": "AzPwPush",
             "type": "string",
             "metadata": {
                 "description": "Name use as base-template to named the resources deployed in Azure."
@@ -13,7 +13,7 @@
             "defaultValue": "5",
             "type": "string",
             "metadata": {
-                "description": "The maximum age of a password URL"
+                "description": "The maximum age of a password URL in days"
             }
         },
         "LogoURL": {
