@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "baseName": {
-            "defaultValue": "AzGlue",
+            "defaultValue": "AzNableProxy",
             "type": "string",
             "metadata": {
                 "description": "Name use as base-template to named the resources deployed in Azure."
@@ -75,11 +75,11 @@
                         },
                         {
                             "name": "JWTKey",
-                            "value": "[parameters('AzAPIKey')]"
+                            "value": "[parameters('JWTKey')]"
                         },
                         {
                             "name": "NableHostname",
-                            "value": "[parameters('ITGlueAPIKey')]"
+                            "value": "[parameters('NableHostname')]"
                         },
                         {
                             "name": "FUNCTIONS_WORKER_RUNTIME",
