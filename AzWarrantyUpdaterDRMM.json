@@ -9,20 +9,6 @@
                 "description": "Name used as base-template to named the resources deployed in Azure."
             }
         },
-        "WriteBackEnabled": {
-            "defaultValue": "true",
-            "type": "bool",
-            "metadata": {
-                "description": "Writeback warranty to system"
-            }
-        },
-        "DRMMEnabled": {
-            "defaultValue": "true",
-            "type": "bool",
-            "metadata": {
-                "description": "DattoRMM"
-            }
-        },
         "DattoHostname": {
             "defaultValue": "https://pinotage-api.centrastage.net",
             "type": "string",
@@ -42,27 +28,6 @@
             "type": "securestring",
             "metadata": {
                 "description": "Your Datto RMM API Secret"
-            }
-        },
-        "DRMMEnabled": {
-            "defaultValue": "true",
-            "type": "bool",
-            "metadata": {
-                "description": "DattoRMM"
-            }
-        },
-        "ITGluehostname": {
-            "defaultValue": "https://eu.api.it-glue.com",
-            "type": "string",
-            "metadata": {
-                "description": "Your current IT-Glue API URL"
-            }
-        },
-        "ITGlueKey": {
-            "defaultValue": "",
-            "type": "securestring",
-            "metadata": {
-                "description": "Your IT-Glue API Key"
             }
         },
         "GitHubBranch": {
