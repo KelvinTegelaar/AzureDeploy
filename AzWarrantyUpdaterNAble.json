@@ -50,7 +50,7 @@
         "funcAppName": "[toLower(concat(parameters('baseName'), variables('suffix')))]",
         "funcStorageName": "[tolower(concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),16)), 'stg', variables('suffix')))]",
         "serverFarmName": "[concat(substring(parameters('baseName'), 0, min(length(parameters('baseName')),14)), '-srv-', variables('suffix'))]",
-        "repoURL": "https://github.com/KelvinTegelaar/AzWarrantyUpdater.git"
+        "repoURL": "https://github.com/KelvinTegelaar/AzWarrantyUpdate.git"
     },
     "resources": [
         {
