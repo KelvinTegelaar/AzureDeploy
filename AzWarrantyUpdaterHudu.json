@@ -9,25 +9,18 @@
                 "description": "Name used as base-template to named the resources deployed in Azure."
             }
         },
-        "DattoHostname": {
-            "defaultValue": "https://pinotage-api.centrastage.net",
+        "HuduHostname": {
+            "defaultValue": "https://yourhudu.hudu.com",
             "type": "string",
             "metadata": {
-                "description": "Your current Datto RMM API URL"
+                "description": "Your current Hudu URL"
             }
         },
-        "DattoAPIKey": {
+        "HuduKey": {
             "defaultValue": "",
             "type": "securestring",
             "metadata": {
-                "description": "Your Datto RMM API Key"
-            }
-        },
-        "DattoAPISecret": {
-            "defaultValue": "",
-            "type": "securestring",
-            "metadata": {
-                "description": "Your Datto RMM API Secret"
+                "description": "Your Hudu API Key"
             }
         },
         "DellClientID": {
@@ -95,16 +88,12 @@
                             "value": "~3"
                         },
                         {
-                            "name": "DattoAPIURL",
-                            "value": "[parameters('DattoHostname')]"
+                            "name": "HuduHostname",
+                            "value": "[parameters('HuduHostname')]"
                         },
                         {
-                            "name": "DattoRMMKEy",
-                            "value": "[parameters('DattoAPIKey')]"
-                        },
-                        {
-                            "name": "DattoAPISecret",
-                            "value": "[parameters('DattoAPISecret')]"
+                            "name": "HuduKey",
+                            "value": "[parameters('HuduKey')]"
                         },
                         {
                             "name": "DellClientID",

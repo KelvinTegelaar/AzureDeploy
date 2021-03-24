@@ -9,25 +9,18 @@
                 "description": "Name used as base-template to named the resources deployed in Azure."
             }
         },
-        "DattoHostname": {
-            "defaultValue": "https://pinotage-api.centrastage.net",
+        "NableHostname": {
+            "defaultValue": "https://yournableserver.com",
             "type": "string",
             "metadata": {
-                "description": "Your current Datto RMM API URL"
+                "description": "Your current N-Central URL"
             }
         },
-        "DattoAPIKey": {
+        "JWTKey": {
             "defaultValue": "",
             "type": "securestring",
             "metadata": {
-                "description": "Your Datto RMM API Key"
-            }
-        },
-        "DattoAPISecret": {
-            "defaultValue": "",
-            "type": "securestring",
-            "metadata": {
-                "description": "Your Datto RMM API Secret"
+                "description": "Your N-central JWT Key"
             }
         },
         "DellClientID": {
@@ -95,12 +88,12 @@
                             "value": "~3"
                         },
                         {
-                            "name": "DattoAPIURL",
-                            "value": "[parameters('DattoHostname')]"
+                            "name": "NableHostname",
+                            "value": "[parameters('NableHostname')]"
                         },
                         {
-                            "name": "DattoRMMKEy",
-                            "value": "[parameters('DattoAPIKey')]"
+                            "name": "JWTKey",
+                            "value": "[parameters('JWTKey')]"
                         },
                         {
                             "name": "DattoAPISecret",

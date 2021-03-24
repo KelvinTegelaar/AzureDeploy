@@ -9,25 +9,18 @@
                 "description": "Name used as base-template to named the resources deployed in Azure."
             }
         },
-        "DattoHostname": {
-            "defaultValue": "https://pinotage-api.centrastage.net",
+        "ITGlueAPIURL": {
+            "defaultValue": "https://api.eu.itglue.com",
             "type": "string",
             "metadata": {
-                "description": "Your current Datto RMM API URL"
+                "description": "Your current ITGlue API URL"
             }
         },
-        "DattoAPIKey": {
+        "ItglueAPIKey": {
             "defaultValue": "",
             "type": "securestring",
             "metadata": {
-                "description": "Your Datto RMM API Key"
-            }
-        },
-        "DattoAPISecret": {
-            "defaultValue": "",
-            "type": "securestring",
-            "metadata": {
-                "description": "Your Datto RMM API Secret"
+                "description": "Your ITGlue API Key"
             }
         },
         "DellClientID": {
@@ -95,16 +88,12 @@
                             "value": "~3"
                         },
                         {
-                            "name": "DattoAPIURL",
-                            "value": "[parameters('DattoHostname')]"
+                            "name": "ItglueAPIKey",
+                            "value": "[parameters('ItglueAPIKey')]"
                         },
                         {
-                            "name": "DattoRMMKEy",
-                            "value": "[parameters('DattoAPIKey')]"
-                        },
-                        {
-                            "name": "DattoAPISecret",
-                            "value": "[parameters('DattoAPISecret')]"
+                            "name": "ItglueAPIURL",
+                            "value": "[parameters('ItglueAPIURL')]"
                         },
                         {
                             "name": "DellClientID",

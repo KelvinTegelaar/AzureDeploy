@@ -9,25 +9,32 @@
                 "description": "Name used as base-template to named the resources deployed in Azure."
             }
         },
-        "DattoHostname": {
+        "AutotaskHostName": {
             "defaultValue": "https://pinotage-api.centrastage.net",
             "type": "string",
             "metadata": {
                 "description": "Your current Datto RMM API URL"
             }
         },
-        "DattoAPIKey": {
+        "AutotaskIntCode": {
             "defaultValue": "",
-            "type": "securestring",
+            "type": "string",
             "metadata": {
-                "description": "Your Datto RMM API Key"
+                "description": "Your Autotask API integration code"
             }
         },
-        "DattoAPISecret": {
+        "AutotaskAPIUsername": {
+            "defaultValue": "",
+            "type": "string",
+            "metadata": {
+                "description": "Your Autotask API Username"
+            }
+        },
+        "AutotaskAPIPassword": {
             "defaultValue": "",
             "type": "securestring",
             "metadata": {
-                "description": "Your Datto RMM API Secret"
+                "description": "Your Autotask API user Password"
             }
         },
         "DellClientID": {
@@ -95,16 +102,20 @@
                             "value": "~3"
                         },
                         {
-                            "name": "DattoAPIURL",
-                            "value": "[parameters('DattoHostname')]"
+                            "name": "AutotaskHostName",
+                            "value": "[parameters('AutotaskHostName')]"
                         },
                         {
-                            "name": "DattoRMMKEy",
-                            "value": "[parameters('DattoAPIKey')]"
+                            "name": "AutotaskIntCode",
+                            "value": "[parameters('AutotaskIntCode')]"
                         },
                         {
-                            "name": "DattoAPISecret",
-                            "value": "[parameters('DattoAPISecret')]"
+                            "name": "AutotaskAPIUsername",
+                            "value": "[parameters('AutotaskAPIUsername')]"
+                        },
+                        {
+                            "name": "AutotaskAPIPassword",
+                            "value": "[parameters('AutotaskAPIPassword')]"
                         },
                         {
                             "name": "DellClientID",

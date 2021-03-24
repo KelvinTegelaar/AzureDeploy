@@ -9,25 +9,32 @@
                 "description": "Name used as base-template to named the resources deployed in Azure."
             }
         },
-        "DattoHostname": {
-            "defaultValue": "https://pinotage-api.centrastage.net",
+        "CWMHostname": {
+            "defaultValue": "https://example.com",
             "type": "string",
             "metadata": {
-                "description": "Your current Datto RMM API URL"
+                "description": "Your current CW Manage API hostname"
             }
         },
-        "DattoAPIKey": {
+        "CWPubKey": {
             "defaultValue": "",
             "type": "securestring",
             "metadata": {
-                "description": "Your Datto RMM API Key"
+                "description": "Your CW Public Key"
             }
         },
-        "DattoAPISecret": {
+        "CWPrivKey": {
             "defaultValue": "",
             "type": "securestring",
             "metadata": {
-                "description": "Your Datto RMM API Secret"
+                "description": "Your CW Private Key"
+            }
+        },
+        "CWMCompanyId": {
+            "defaultValue": "",
+            "type": "string",
+            "metadata": {
+                "description": "Your CW Company Id"
             }
         },
         "DellClientID": {
@@ -95,16 +102,20 @@
                             "value": "~3"
                         },
                         {
-                            "name": "DattoAPIURL",
-                            "value": "[parameters('DattoHostname')]"
+                            "name": "CWMHostname",
+                            "value": "[parameters('CWMHostname')]"
                         },
                         {
-                            "name": "DattoRMMKEy",
-                            "value": "[parameters('DattoAPIKey')]"
+                            "name": "CWPrivKey",
+                            "value": "[parameters('CWPrivKey')]"
                         },
                         {
-                            "name": "DattoAPISecret",
-                            "value": "[parameters('DattoAPISecret')]"
+                            "name": "CWPubKey",
+                            "value": "[parameters('CWPubKey')]"
+                        },
+                        {
+                            "name": "CWMCompanyID",
+                            "value": "[parameters('CWMCompanyId')]"
                         },
                         {
                             "name": "DellClientID",
