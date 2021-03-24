@@ -6,7 +6,14 @@
             "defaultValue": "AzWarrantyUpdater",
             "type": "string",
             "metadata": {
-                "description": "Name use as base-template to named the resources deployed in Azure."
+                "description": "Name used as base-template to named the resources deployed in Azure."
+            }
+        },
+        "WriteBackEnabled": {
+            "defaultValue": "true",
+            "type": "bool",
+            "metadata": {
+                "description": "Writeback warranty to system"
             }
         },
         "DRMMEnabled": {
@@ -16,11 +23,46 @@
                 "description": "DattoRMM"
             }
         },
-        "NableHostname": {
-            "defaultValue": "yourmm.yourdomain.com",
+        "DattoHostname": {
+            "defaultValue": "https://pinotage-api.centrastage.net",
             "type": "string",
             "metadata": {
-                "description": "Your current N-Central hostname"
+                "description": "Your current Datto RMM API URL"
+            }
+        },
+        "DattoAPIKey": {
+            "defaultValue": "",
+            "type": "securestring",
+            "metadata": {
+                "description": "Your Datto RMM API Key"
+            }
+        },
+        "DattoAPISecret": {
+            "defaultValue": "",
+            "type": "securestring",
+            "metadata": {
+                "description": "Your Datto RMM API Secret"
+            }
+        },
+        "DRMMEnabled": {
+            "defaultValue": "true",
+            "type": "bool",
+            "metadata": {
+                "description": "DattoRMM"
+            }
+        },
+        "ITGluehostname": {
+            "defaultValue": "https://eu.api.it-glue.com",
+            "type": "string",
+            "metadata": {
+                "description": "Your current IT-Glue API URL"
+            }
+        },
+        "ITGlueKey": {
+            "defaultValue": "",
+            "type": "securestring",
+            "metadata": {
+                "description": "Your IT-Glue API Key"
             }
         },
         "GitHubBranch": {
